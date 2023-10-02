@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Kepanitiaan</title>
+</head>
+
+<body>
+    <h1>Formulir Pendaftaran Kepanitiaan</h1>
+    <form action="proses_pendaftaran.php" method="POST" enctype="multipart/form-data">
+        <!-- Input Teks untuk Nama -->
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <!-- Input Email -->
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Pilihan Gender -->
+        <label for="gender">Jenis Kelamin:</label>
+        <input type="radio" id="pria" name="gender" value="pria" required>
+        <label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="gender" value="wanita" required>
+        <label for="wanita">Wanita</label><br><br>
+
+        <!-- Pilihan Jenis Kepanitiaan -->
+        <label for="jenis_kepanitiaan">Jenis Kepanitiaan:</label>
+        <select id="jenis_kepanitiaan" name="jenis_kepanitiaan" required>
+            <option value="logistik">Logistik</option>
+            <option value="acara">Acara</option>
+            <option value="promosi">Promosi</option>
+            <option value="lainnya">Lainnya</option>
+        </select><br><br>
+
+        <!-- Input Nomor Telepon -->
+        <label for="nomor_telepon">Nomor Telepon:</label>
+        <input type="tel" id="nomor_telepon" name="nomor_telepon" required><br><br>
+
+        <!-- Input Alamat -->
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea><br><br>
+
+        <!-- Input Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+
+
+        <!-- Semester -->
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester" required><br><br>
+
+        <!-- Input URL Media Sosial -->
+        <label for="media_sosial">URL Media Sosial:</label>
+        <input type="url" id="media_sosial" name="media_sosial" required><br><br>
+
+        <!-- Input Unggah CV -->
+        <label for="cv">Unggah CV:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required><br><br>
+
+        <!-- Kotak Centang untuk Syarat dan Ketentuan -->
+        <input type="checkbox" id="syarat" name="syarat" required>
+        <label for="syarat">Saya menyetujui syarat dan ketentuan.</label><br><br>
+
+        <!-- Tombol Submit -->
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+
+</html>
